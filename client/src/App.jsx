@@ -7,7 +7,7 @@ const App = () => {
     <BrowserRouter>
       <header className="w-full flex justify-between items-center bg-white sm:px-8 px4  py-4 border-b border-b-[#e6ebf4]">
         <Link to="/">
-          <img className=" h-10 w-full object-contain" src={j} />
+          <img className=" h-10 w-full object-contain" src={j}/>
         </Link>
         <Link
           to="/create-post"
