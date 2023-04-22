@@ -22,4 +22,7 @@ app.use(fileupload({
 app.use(router)
 console.log(__dirname)
 app.use(express.static(join(__dirname,'../client/dist')))
+app.get("*",(req,res)=>{
+  res.sendFile(join(__dirname,'../client/dist/index.html'))
+})
 export default app
